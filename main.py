@@ -10,6 +10,7 @@ def cpu_load_task():
 
 TIMEOUT = 180
 
+
 if __name__ == '__main__':
     pool = mp.Pool()
     results = [pool.apply_async(cpu_load_task) for _ in range(4)]
