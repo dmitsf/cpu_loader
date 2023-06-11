@@ -5,7 +5,7 @@ import time
 
 def cpu_load_task():
     while True:
-        _ = math.sqrt(64*64*64*64*64)
+        _ = math.sqrt(64*64*64*64*64*64*64)
 
 
 TIMEOUT = 180
