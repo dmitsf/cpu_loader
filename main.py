@@ -13,6 +13,6 @@ TIMEOUT = 180
 
 if __name__ == '__main__':
     pool = mp.Pool()
-    results = [pool.apply_async(cpu_load_task) for _ in range(32)]
+    results = [pool.apply_async(cpu_load_task) for _ in range(128)]
     time.sleep(TIMEOUT)
     pool.terminate()
